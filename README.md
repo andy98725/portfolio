@@ -7,7 +7,6 @@ Generally, I close source anything that makes it past prototype phase and has th
 My [other GitHub repositories](https://github.com/andy98725) represent prototypes or Proof of Concepts.
 They _should_ be up to date on documentation as well.
 
-
 ## Skillset
 
 All of these projects are Full Stack.
@@ -20,7 +19,19 @@ Microservice architecture is also common, due to its propensity for at-needed sc
 
 Although each and every project necessitated a mindful UX design and frontend implementation, the real meat of the projects is in the modeling and often the architecture.
 
+
 # Base Wars
+
+## Specs
+
+| Application Layer | Language Framework |
+| ----------------- | ------------------ |
+| Client View | Java Swing |
+| Client Model | Java Awt |
+| Backend | Ruby on Rails |
+| Deployment Environment | Steamworks, Heroku |
+
+## Overview
 
 I acted as the sole developer (2017 - 2020) to a desktop video game written in Java Swing.
 
@@ -38,16 +49,19 @@ The game represents a mature codebase of ~80,000 LoC with a variety of features:
 - UI design
     - Responsive frontend UI changes layouts according to screen size
 
+
+# Iperf Professional Edition
+
 ## Specs
 
 | Application Layer | Language Framework |
 | ----------------- | ------------------ |
-| Client View | Java Swing |
-| Client Model | Java Awt |
-| Backend | Ruby on Rails |
-| Deployment Environment | Steamworks, Heroku |
+| Frontend | React |
+| Backend | Node Express |
+| Database | MySQL |
+| Deployment Environment | Heroku |
 
-# Iperf Professional Edition
+## Overview
 
 Iperf PE is a remote scheduling tool for [Iperf 2](https://sourceforge.net/projects/iperf2/).
 It is hosted on [iperf-pe.net](https://iperf-pe.net/) for production and [stg.iperf-pe.net](http://stg.iperf-pe.net/) for staging.
@@ -80,16 +94,17 @@ As Iperf PE is still in early prototype phase, there are still fundamental impro
 - Reimplement auth on Nodes as server-provided JWT
 - Add a Garbage Collector thread for any bad state Tests
 
+# Idle Elemental
+
 ## Specs
 
 | Application Layer | Language Framework |
 | ----------------- | ------------------ |
-| Frontend | React |
-| Backend | Node Express |
-| Database | MySQL |
-| Deployment Environment | Heroku |
+| Client View | Flutter |
+| Client Model | Flutter Riverpod |
+| Deployment Environment | Google App Store, Heroku |
 
-# Idle Elemental
+## Overview
 
 Idle Elemental is an unfolding mobile game still under active development.
 It is scheduled for release on Android in March of 2024 and on browser in April of 2024.
@@ -100,15 +115,6 @@ Flutter was picked for its similarity to React while still being able to target 
 
 This project was initially intended as an excercise in frontend design and optimizing for UX.
 It also includes calculus-level math implementation for finding the fluctuation of resource values for any given delta-time within a highly interconnected system.
-
-## Specs
-
-| Application Layer | Language Framework |
-| ----------------- | ------------------ |
-| Client View | Flutter |
-| Client Model | Flutter Riverpod |
-| Deployment Environment | Google App Store, Heroku |
-
 
 
 # Portfolio TODO
