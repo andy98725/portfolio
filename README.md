@@ -116,3 +116,5 @@ It also includes calculus-level math implementation for finding the fluctuation 
 - Add example images & gifs to individual directories
 - Update documentation on my other repositories
 - Update Idle Elemental's info once published
+- Update documentation (with pictures!) for my other GH repos
+- Add repository highlights section to link to my other significant GH repos
