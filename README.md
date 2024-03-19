@@ -22,8 +22,6 @@ Although each and every project necessitated a mindful UX design and frontend im
 
 # Base Wars
 
-## Specs
-
 | Application Layer | Language Framework |
 | ----------------- | ------------------ |
 | Client View | Java Swing |
@@ -51,8 +49,6 @@ The game represents a mature codebase of ~80,000 LoC with a variety of features:
 
 
 # Iperf Professional Edition
-
-## Specs
 
 | Application Layer | Language Framework |
 | ----------------- | ------------------ |
@@ -95,8 +91,6 @@ As Iperf PE is still in early prototype phase, there are still fundamental impro
 - Add a Garbage Collector thread for any bad state Tests
 
 # Idle Elemental
-
-## Specs
 
 | Application Layer | Language Framework |
 | ----------------- | ------------------ |
