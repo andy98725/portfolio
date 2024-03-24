@@ -5,7 +5,7 @@ This will be a semi-technical overview of my larger projects.
 Generally, I close source anything that makes it past prototype phase and has the potential for revenue. 
 
 My [other GitHub repositories](https://github.com/andy98725) represent prototypes or Proof of Concepts.
-They _should_ be up to date on documentation as well.
+I've listed the important ones at the bottom, along with sample images.
 
 ## Skillset
 
