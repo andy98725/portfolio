@@ -47,6 +47,10 @@ The game represents a mature codebase of ~80,000 LoC with a variety of features:
 - UI design
     - Responsive frontend UI changes layouts according to screen size
 
+![base wars ingame](./base_wars/1.png)
+![base wars menu](./base_wars/2.png)
+![base wars info page](./base_wars/3.png)
+
 
 # Iperf Professional Edition
 
@@ -90,6 +94,10 @@ As Iperf PE is still in early prototype phase, there are still fundamental impro
 - Reimplement auth on Nodes as server-provided JWT
 - Add a Garbage Collector thread for any bad state Tests
 
+![iperf landing](./iperf_pe/1.png)
+![iperf dashboard](./iperf_pe/2.png)
+![iperf test results](./iperf_pe/3.png)
+
 # Idle Elemental
 
 | Application Layer | Language Framework |
@@ -110,11 +118,19 @@ Flutter was picked for its similarity to React while still being able to target 
 This project was initially intended as an excercise in frontend design and optimizing for UX.
 It also includes calculus-level math implementation for finding the fluctuation of resource values for any given delta-time within a highly interconnected system.
 
+![idle elemental early](./idle_elemental/1.png)
+![idle elemental late](./idle_elemental/2.png)
 
-# Portfolio TODO
+# Other Repositories
 
-- Add example images & gifs to individual directories
-- Update documentation on my other repositories
-- Update Idle Elemental's info once published
-- Update documentation (with pictures!) for my other GH repos
-- Add repository highlights section to link to my other significant GH repos
+| Name | Description |
+| ---- | ----------- |
+| [haunt-jam](https://github.com/andy98725/haunt-jam) | A libGDX game made in 48 hours |
+| [bw-launcher](https://github.com/andy98725/bw-launcher) | An Electron app that was used for version management |
+| [triomino-tiling](https://github.com/andy98725/TriominoTiling) | A visually satisfying implementation of a triomino tiling theorem |
+| [arbit-coin](https://github.com/andy98725/ArbitCoin) | A proof-of-concept cryptocurrency arbitrage detector |
+| [true-movement](https://github.com/andy98725/True-Movement) | An original search algorithm for calculating true distance shapes |
+| [bezier-curve-tangents](https://github.com/andy98725/Bezier-Curve-Tangents) | An original algorithm for finding tangent lines to any bezier curve |
+| [mazenPy](https://github.com/andy98725/MazenPy) | A Reinforcement Learning implementation for solving mazes |
+| [color-game](https://github.com/andy98725/Color_Game) | A cellular automata for generating clusters |
+| [worms-n-guns](https://github.com/andy98725/Worms-N-Guns) | A proof of concept physics-based game |
