@@ -118,8 +118,8 @@ Flutter was picked for its similarity to React while still being able to target 
 This project was initially intended as an excercise in frontend design and optimizing for UX.
 It also includes calculus-level math implementation for finding the fluctuation of resource values for any given delta-time within a highly interconnected system.
 
-![idle elemental early](./idle_elemental/1.png)
-![idle elemental late](./idle_elemental/2.png)
+![idle elemental early](./idle_elemental/1.jpg)
+![idle elemental late](./idle_elemental/2.jpg)
 
 # Other Repositories
 
