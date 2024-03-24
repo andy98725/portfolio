@@ -134,3 +134,14 @@ It also includes calculus-level math implementation for finding the fluctuation 
 | [mazenPy](https://github.com/andy98725/MazenPy) | A Reinforcement Learning implementation for solving mazes |
 | [color-game](https://github.com/andy98725/Color_Game) | A cellular automata for generating clusters |
 | [worms-n-guns](https://github.com/andy98725/Worms-N-Guns) | A proof of concept physics-based game |
+
+![triomino small](./other/tri-1.png)
+![triomino large](./other/tri-2.png)
+![haunt jam](./other/haunt-1.png)
+![true movement 1](./other/movement-1.png)
+![true movement 2](./other/movement-2.png)
+![bezier tangent](./other/bezierLooped.gif)
+![maze learner](./other/mazen-1.png)
+![color game small](./other/color-1.png)
+![color game many](./other/color-2.png)
+![color game large](./other/color-3.png)
