@@ -1,29 +1,27 @@
 # Andy's Portfolio
 
 I close the source of anything that makes it past prototype phase and has the potential for revenue.
-Those larger projects will be discussed here.
+These larger projects will be discussed here.
 
 My [other GitHub repositories](https://github.com/andy98725) represent early prototypes or Proof of Concepts.
-I've listed some interesting ones at the bottom with sample images.
+I've listed some interesting ones at the bottom with images.
 
 ## Overview
 
-Each project has used a different language + framework, simply depending on its business requirements and the best tool for the job.
+Each project was implemented in a different language + framework, simply depending on its business requirements and the best tool for the job.
 
-In particular, I plan out the software architecture ahead of time, leading to minimal tech debt and remarkably high SLA (99.9% uptime and a single digit crash rate) in these projects.
+In particular, I plan out the software architecture ahead of time, leading to minimal tech debt and remarkably high SLA (99.9% uptime and single digit crash rate).
 
 These projects commonly use multithreading to separate calculation-heavy (e.g. model updating) concerns from low-latency (rendering, API) concerns.
 
 
 # Idle Elemental
 
-| Application Layer | Language Framework |
+| App Layer | Framework |
 | ----------------- | ------------------ |
 | Client View | Flutter |
 | Client Model | Riverpod (Flutter) |
 | Deployment Environment | Google App Store, Firebase |
-
-## Overview
 
 Idle Elemental is an unfolding mobile game for [web](https://idleelem.net/) and [Google Play](https://play.google.com/store/apps/details?id=com.everlastinggames.idle_elemental&hl=en).
 It launched on 4/21/2024 after 2 years of intermittent work.
@@ -40,7 +38,7 @@ It also includes calculus-level math implementation for finding the fluctuation 
 
 # Base Wars
 
-| Application Layer | Language Framework |
+| App Layer | Framework |
 | ----------------- | ------------------ |
 | Client View | Java Swing |
 | Client Model | Java Awt |
@@ -71,14 +69,12 @@ After 5 years of development, Base Wars has a mature codebase of ~80,000 LoC wit
 
 # Iperf Professional Edition
 
-| Application Layer | Language Framework |
+| App Layer | Framework |
 | ----------------- | ------------------ |
 | Frontend | React |
 | Backend | Node Express |
 | Database | MySQL |
 | Deployment Environment | Heroku |
-
-## Overview
 
 Iperf PE is a remote scheduling tool for [Iperf 2](https://sourceforge.net/projects/iperf2/).
 It is hosted on [iperf-pe.net](https://iperf-pe.net/) for production and [stg.iperf-pe.net](http://stg.iperf-pe.net/) for staging.
