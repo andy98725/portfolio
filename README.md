@@ -23,7 +23,7 @@ These projects commonly use multithreading to separate calculation-heavy (e.g. m
 | Client Model | Riverpod (Flutter) |
 | Deployment Environment | Google App Store, Firebase |
 
-Idle Elemental is an unfolding mobile game for [web](https://idleelem.net/) and [Google Play](https://play.google.com/store/apps/details?id=com.everlastinggames.idle_elemental&hl=en).
+Idle Elemental is an unfolding mobile game available on [web](https://idleelem.net/) and [Google Play](https://play.google.com/store/apps/details?id=com.everlastinggames.idle_elemental&hl=en).
 It launched on 4/21/2024 after 2 years of intermittent work.
 
 Dart's Flutter framework was picked for its efficient rendering engine, similarity to React, and its cross platform compatibility.
