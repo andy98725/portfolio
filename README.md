@@ -1,18 +1,64 @@
 # Andy's Portfolio
 
-I close the source of anything that makes it past prototype phase and has the potential for revenue.
+I close the source code of any project that makes it past prototype phase and has an active revenue stream.
 These larger projects will be discussed here.
 
-My [other GitHub repositories](https://github.com/andy98725) represent early prototypes or Proof of Concepts.
-I've listed some interesting ones at the bottom with images.
+My [public GitHub repositories](https://github.com/andy98725) represent early prototypes or Proof of Concepts.
+I've listed some more interesting ones at the bottom with images.
 
 ## Overview
 
-Each project was implemented in a different language + framework, simply depending on its business requirements and the best tool for the job.
+Each project listed here was implemented in a different language + framework, simply depending on its technical requirements and matching the best tool for the job.
 
-In particular, I plan out the software architecture ahead of time, leading to minimal tech debt and remarkably high SLA (99.9% uptime and single digit crash rate).
+I always architect the software's overall design ahead of time, leading to minimal tech debt and a remarkably high SLA: a 99.9% uptime and single digit crash rate across all projects.
 
-These projects commonly use multithreading to separate calculation-heavy (e.g. model updating) concerns from low-latency (rendering, API) concerns.
+These projects often utilize multithreading & concurrency patterns to separate calculation-heavy (e.g. model updating) concerns from low-latency (rendering, API) concerns.
+
+
+# Iperf Professional Edition
+
+| App Layer | Framework |
+| ----------------- | ------------------ |
+| Frontend | React |
+| Backend | Node Express |
+| Database | MySQL |
+| Deployment Environment | Heroku |
+
+Iperf PE is a remote scheduling tool for [Iperf 2](https://sourceforge.net/projects/iperf2/).
+It is hosted on [iperf-pe.net](https://iperf-pe.net/) for production and [stg.iperf-pe.net](http://stg.iperf-pe.net/) for staging.
+
+The app is designed with a minimalist UI, presenting essential information efficiently and clearly to the user.
+The concepts of Nodes and Tests are succinctly explained and their creation interface is designed to be as streamlined as possible.
+
+The architecture is as follows:
+
+- Frontend (React)
+    - Stores session token & handles auth appropriately
+    - Makes async API calls and renders relevant data into custom table components
+- Backend (Node Express)
+    - Uses Sequelize ORM to model & represent Database tables
+    - Provides API to frontend for User management and CRUD operations on Nodes and Tests
+    - Scheduler thread picks up Tests to be started and calls specified Nodes
+- Database (MySQL)
+- Nodes (Golang)
+    - A Node is a remote server which the backend can call upon to start / stop Iperf Tests
+    - Uses U/P auth to validate endpoint calls
+    - Reports status, uptime, and test results to Backend
+    - Runs inside a Docker image for environmental flexibility
+    - Source and image are currently provided to the user as a GitHub release
+
+## Next Steps
+
+As Iperf PE is still in Proof of Concept phase, there are fundamental improvements to be made.
+
+- Provide the Node's Docker image directly from a container registry
+- Reimplement auth on Nodes as server-provided JWT
+- Add a Garbage Collector thread for any bad state Tests
+
+![iperf landing](./iperf_pe/1.png)
+![iperf dashboard](./iperf_pe/2.png)
+![iperf test results](./iperf_pe/3.png)
+
 
 
 # Idle Elemental
@@ -65,52 +111,6 @@ After 5 years of development, Base Wars has a mature codebase of ~80,000 LoC wit
 ![base wars ingame](./base_wars/1.png)
 ![base wars menu](./base_wars/2.png)
 ![base wars info page](./base_wars/3.png)
-
-
-# Iperf Professional Edition
-
-| App Layer | Framework |
-| ----------------- | ------------------ |
-| Frontend | React |
-| Backend | Node Express |
-| Database | MySQL |
-| Deployment Environment | Heroku |
-
-Iperf PE is a remote scheduling tool for [Iperf 2](https://sourceforge.net/projects/iperf2/).
-It is hosted on [iperf-pe.net](https://iperf-pe.net/) for production and [stg.iperf-pe.net](http://stg.iperf-pe.net/) for staging.
-
-The app is designed with a minimalist UI, presenting essential information efficiently and clearly to the user.
-The concepts of Nodes and Tests are succinctly explained and their creation interface is designed to be as streamlined as possible.
-
-The architecture is as follows:
-
-- Frontend (React)
-    - Stores session token & handles auth appropriately
-    - Makes async API calls and renders relevant data into custom table components
-- Backend (Node Express)
-    - Uses Sequelize ORM to model & represent Database tables
-    - Provides API to frontend for User management and CRUD operations on Nodes and Tests
-    - Scheduler thread picks up Tests to be started and calls specified Nodes
-- Database (MySQL)
-- Nodes (Golang)
-    - A Node is a remote server which the backend can call upon to start / stop Iperf Tests
-    - Uses U/P auth to validate endpoint calls
-    - Reports status, uptime, and test results to Backend
-    - Runs inside a Docker image for environmental flexibility
-    - Source and image are currently provided to the user as a GitHub release
-
-## Next Steps
-
-As Iperf PE is still in early prototype phase, there are still fundamental improvements to be done.
-
-- Provide the Node's Docker image directly from a container registry
-- Reimplement auth on Nodes as server-provided JWT
-- Add a Garbage Collector thread for any bad state Tests
-
-![iperf landing](./iperf_pe/1.png)
-![iperf dashboard](./iperf_pe/2.png)
-![iperf test results](./iperf_pe/3.png)
-
 
 # Other Repositories
 
