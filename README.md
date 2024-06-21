@@ -79,8 +79,8 @@ The page layout dynamically changes tightly coupled with game state, only showin
 
 It also includes calculus-level math implementation for finding the fluctuation of resource values for any given delta-time within a highly interconnected system. This is done for offline calculations and framerate optimization.
 
-![idle elemental early](./idle_elemental/1.jpg =x500)
-![idle elemental late](./idle_elemental/2.jpg =x500)
+![idle elemental early](./idle_elemental/1.jpg)
+![idle elemental late](./idle_elemental/2.jpg)
 
 # Base Wars
 
